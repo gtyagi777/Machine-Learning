@@ -18,9 +18,3 @@ clf = svm.SVC()
 clf.fit(X_train,Y_train)
 accuracy = clf.score(X_test,Y_test)
 print (accuracy)
-
-example = np.array([[4,2,1,1,1,2,3,2,1]])
-example =  example.reshape(len(example),-1)
-
-pred = clf.predict(example)
-print (pred)
